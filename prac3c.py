@@ -1,4 +1,4 @@
-
+# Factorial using iteration and recursion
 def factorial_re(number):
     if number<0:
         print("cannot find the factorial of negative number")

@@ -1,3 +1,4 @@
+# operation on stack
 stack=[]
 stack.append('AMIT')
 stack.append('BHAKTI')

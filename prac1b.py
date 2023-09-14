@@ -1,3 +1,4 @@
+# matrix operations
 import numpy as np
 x= np.array([[12,3,21],[2,43,5],[5,32,53]])
 y= np.array([[11,4,6],[23,7,9],[4,8,43]])
