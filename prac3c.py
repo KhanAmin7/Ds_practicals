@@ -7,9 +7,6 @@ def factorial_re(number):
         return 1
     else:
         return number*factorial_re(number-1)
-number=int(input("Enter the number\n"))
-print("\nfactorial using recursion is",factorial_re(number))
-
 def factorial_iteration(number):
     if number<0:
         print("invalid entry! cannot find the factorial of negative number")
@@ -19,4 +16,16 @@ def factorial_iteration(number):
         fact=fact*number
         number-=1
     return fact
-print(f"factorial using iteration is {factorial_iteration(number)}")
+
+print("\n1.Recursion")
+print("2.Iteration\n")
+opt=int(input("Enter the number for which method do you want to perform factorial:"))
+number=int(input("Enter the number\n"))
+if opt==1:
+    factorial_re(number)
+    print("\nfactorial using recursion is",factorial_re(number))
+else:
+    factorial_iteration(number)
+    
+    print(f"factorial using iteration is {factorial_iteration(number)}")
+
