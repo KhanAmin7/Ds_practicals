@@ -12,7 +12,7 @@ def selection_sort(list1):#amullyas academy
 def insertion_sort(list1):# https://www.youtube.com/watch?v=R_wDA-PmGE4
     for i in range(1, len(list1)):
         j = i
-        while list1[j - 1] > list1[j] and j > 0:
+        while list1[j - 1] > list1[j] and j > 0:#checks if left neighbour is greater than current
             list1[j - 1], list1[j] = list1[j], list1[j - 1]
             j -= 1
 
@@ -22,7 +22,6 @@ def bubble_sort(list1):#https://www.youtube.com/watch?v=g_xesqdQqvA
 
     while not sorted:
         sorted = True
-
         for i in range(0, indexing_length):
             if list1[i] > list1[i + 1]:  # Compare adjacent elements for sorting
                 sorted = False
