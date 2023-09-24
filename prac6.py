@@ -2,9 +2,12 @@
 
 def selection_sort(list1):#amullyas academy
     for i in range(len(list1)):
-        min_val = min(list1[i:])
-        min_ind = list1.index(min_val, i)
-        list1[i], list1[min_ind] = list1[min_ind], list1[i]
+        min_val = i
+        for j in range (i+1, len(list1)):
+            if list1[min_val]>list1[j]:
+                min_val=j
+        list1[i],list1[min_val]= list1[min_val],list1[i]
+       
 
 def insertion_sort(list1):# https://www.youtube.com/watch?v=R_wDA-PmGE4
     for i in range(1, len(list1)):
@@ -27,7 +30,6 @@ def bubble_sort(list1):#https://www.youtube.com/watch?v=g_xesqdQqvA
 
 list1 = [56, 17, 8, 24, 18, 47, 17]
 print(list1)
-
 print("1. Selection Sort")
 print("2. Insertion Sort")
 print("3. Bubble Sort")
