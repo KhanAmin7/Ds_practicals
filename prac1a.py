@@ -1,4 +1,4 @@
-# code for sorting, binary search, merge, reversing
+# code for sorting, binary search, merge, reversing in 1-D array
 import numpy as np
 
 arr= [22,11,34,9,56,44]
